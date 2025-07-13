@@ -24,7 +24,7 @@ const buttonClasses = computed(() => [
     'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500': variant === 'primary',
     'bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500': variant === 'secondary',
     'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500': variant === 'danger',
-    'bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50': variant === 'outline',
+    'bg-transparent border border-gray-300 text-gray-700 hover:bg-gray-50': variant === 'outlined',
   },
   {
     'opacity-50 cursor-not-allowed pointer-events-none': disabled,
