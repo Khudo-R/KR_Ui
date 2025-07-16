@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
 
     /* Vue */
-    "types": ["vue"],
+    "types": ["vue", "./src/global.d.ts"],
     "allowImportingTsExtensions": true,
     /* Linting */
     "strict": true,

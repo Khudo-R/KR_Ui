@@ -1,3 +1,4 @@
+import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
@@ -7,7 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': new URL('./src', import.meta.url).pathname,
-      '@@': new URL('../', import.meta.url).pathname,
+      'kr-ui': resolve(__dirname, '../src/index.ts'),
     },
   },
   server: {

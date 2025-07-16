@@ -4,7 +4,7 @@ type ModelValue = string
 
 export interface ITextInputProps {
   variant: Variant
-  size: Size
+  size?: Size
   modelValue?: ModelValue
   text?: string
   placeholder?: string

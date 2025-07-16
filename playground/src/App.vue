@@ -32,10 +32,10 @@ function handleClick() {
             <KrButton variant="secondary">
               Secondary
             </KrButton>
-            <KrButton variant="danger">
+            <KrButton variant="danger" size="medium" :disabled="false">
               Danger
             </KrButton>
-            <KrButton variant="outline">
+            <KrButton variant="outline" size="large" :disabled="false">
               Outline
             </KrButton>
           </div>
@@ -66,11 +66,11 @@ function handleClick() {
         </h2>
         <div class="space-y-4">
           <div class="flex gap-4">
-            <KrTextInput v-model="testInputVal" size="small" />
+            <KrTextInput v-model="testInputVal" size="small" variant="primary" />
           </div>
 
           <div class="flex gap-4">
-            <KrTextInput disabled />
+            <KrTextInput disabled size="medium" />
           </div>
         </div>
       </section>

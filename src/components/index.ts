@@ -1,5 +1,21 @@
-export { default as Button } from './Button/Button.vue'
-export type { IButtonProps } from './Button/types'
+import type { IButtonProps } from './Button/types'
+import type { ITextInputEmits, ITextInputProps } from './InputText/types'
 
-export { default as TextInput } from './InputText/InputText.vue'
-export type { ITextInputEmits, ITextInputProps } from './InputText/types'
+import KrButton from './Button/Button.vue'
+import KrTextInput from './InputText/InputText.vue'
+
+export type {
+  IButtonProps,
+  ITextInputEmits,
+  ITextInputProps,
+}
+
+export const components = {
+  KrButton,
+  KrTextInput,
+}
+
+export {
+  KrButton,
+  KrTextInput,
+}

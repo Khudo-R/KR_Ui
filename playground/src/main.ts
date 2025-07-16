@@ -1,11 +1,12 @@
-import { createApp } from 'vue'
+import KrUiPlugin from 'kr-ui'
 
-import KrUi from '../../src'
+import { createApp } from 'vue'
 import App from './App.vue'
 
 import 'uno.css'
 
 const app = createApp(App)
 
-app.use(KrUi)
+app.use(KrUiPlugin)
+
 app.mount('#app')
